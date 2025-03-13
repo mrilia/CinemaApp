@@ -1,0 +1,12 @@
+﻿services:
+  cinemaapp:
+    image: cinemaapp
+    build:
+      context: .
+      dockerfile: CinemaApp/CinemaApp/Dockerfile
+
+  cinemaapp.client:
+    image: cinemaapp.client
+    build:
+      context: .
+      dockerfile: CinemaApp/CinemaApp.Client/Dockerfile
